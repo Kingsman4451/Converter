@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<section class="converter">
+  <div class="container-xl container-fluid">
+    <div class="converter__inner pt-5">
+      <h2 class="converter__heading text-center text-dark m-0 mb-5">
+        The best converter of currency.<br>
+        <span class="text-success">USD</span> to <span class="text-primary">USZ</span>
+      </h2>
+      <div class="converter__bottom d-flex gx-0 flex-column flex-lg-row justify-content-between p-2 ps-sm-3">
+        <div class="col-12 col-md-10 col-lg-6 h-100 d-flex flex-column justify-content-between mx-auto">
+          <form class="form h-100 py-5 px-3 px-sm-5 bg-light w-100" action="https://echo.htmlacademy.ru" method="post">
+            <div class="d-flex justify-content-between flex-column flex-sm-row text-center text-sm-start">
+              <label class="form__label" id="label1" for="currency1"> 
+                <p class="h3 text-success" id="currency1"></p>
+                <input class="form-control" type="text" id="input1">
+              </label>
+              <button class="form__currency-change btn btn-primary mx-3 align-self-center align-self-sm-end px-5 px-sm-3 mt-3" id="change" type="button">
+                <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white"><path d="M32 176h370.8l-57.38 57.38c-12.5 12.5-12.5 32.75 0 45.25C351.6 284.9 359.8 288 368 288s16.38-3.125 22.62-9.375l112-112c12.5-12.5 12.5-32.75 0-45.25l-112-112c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L402.8 112H32c-17.69 0-32 14.31-32 32S14.31 176 32 176zM480 336H109.3l57.38-57.38c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-112 112c-12.5 12.5-12.5 32.75 0 45.25l112 112C127.6 508.9 135.8 512 144 512s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L109.3 400H480c17.69 0 32-14.31 32-32S497.7 336 480 336z"/></svg>
+              </button>
+              <label class="form__label" id="label2" for="currency2">
+                <p class="h3 text-primary" id="currency2"></p>
+                <input class="form-control" type="text" id="input2" disabled>
+              </label>
+            </div>
+            <button class="form__submit px-5 py-2 rounded-pill btn btn-primary d-inline-block mt-5" type="submit">Submit</button>
+          </form>
+          <div class="converter__content bg-light p-3 ps-sm-5 pt-4 pt-sm-5">
+            <h3 class="m-0 mb-4">The history of <span class="text-success">USD</span></h3>
+            <p class=" converter__text">
+              The first U.S. dollar was printed in 1914 after the Federal Reserve Bank was created. The Allies paid the U.S. for supplies in gold during World War I, propelling the U.S. to become the largest holder of gold. Countries pegged their currencies to the dollar after the war, ending the gold standard
+            </p>
+            <h3 class="m-0 mb-4 mt-5">The history of <span class="text-primary">USZ</span></h3>
+            <p class=" converter__text">
+              Like other republics of the former Soviet Union, Uzbekistan continued using the Soviet/Russian ruble after independence. On 26 July 1993, a new series of Russian ruble was issued and the old Soviet/Russian ruble ceased to be legal tender in Russia.[1][2] Some successor states had their national currencies before the change, some chose to continue using the pre-1993 Soviet/Russian ruble, and some chose to use both the pre-1993 and the new Russian ruble. Tables of modern monetary history: Asia[3] implies that both old and new rubles were used in Uzbekistan.
+            </p>
+          </div>
+        </div>
+        <div class="converter__info col-12 col-md-10 col-lg-5 bg-light overflow-auto py-4 ps-4 mx-auto">
+          <ul class="converter__list list-unstyled overflow-auto"></ul>
+          <button class="converter__clear btn btn-primary" type="button">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
