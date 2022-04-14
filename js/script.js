@@ -36,14 +36,13 @@ changeBtn.addEventListener("click", (e) => {
     elCurrency2.textContent = "USZ";
     elCurrency2.setAttribute( 'style', 'color: #0D6EFD !important' );
     elCurrency1.setAttribute( 'style', 'color: #198754 !important' );
-    // elInput2.value = Math.floor(Number(elInput1.value) / usdCours);
     one = 1
   }
 })
 
 submitBtn.addEventListener("click", (ev) => {
   ev.preventDefault();
-  if(elCurrency1.textContent == "USZ") {
+  if(one == 2) {
     elInput2.value = (Number(elInput1.value) / usdCours).toFixed(2);
   }else {
     elInput2.value = Number(elInput1.value) * usdCours
